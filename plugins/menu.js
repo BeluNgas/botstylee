@@ -85,11 +85,17 @@ let handler  = async (m, { conn, usedPrefix: _p, DevMode }) => {
     let before = conn.menu.before || ` ┌──「 ${conn.user.name} 」
 │============================
 ├  ${ucapan()}, %name!
-├ Nama : %name!
-├ Hari: *%week %weton*
-├ Tanggal: *%date*
-├ Waktu: *%time*
-├ Uptime: *%uptime (%muptime)*
+├ Nama    : %name!
+├ Hari    : *%week %weton*
+├ Tanggal : *%date*
+├ Waktu   : *%time WIB*
+├ Runtime : *%uptime*
+│
+│ 𝘘𝘜𝘖𝘛𝘌𝘚  : 
+│ Pacar orang adalah jodoh kita yang tertunda
+│
+│ 𝘘𝘜𝘖𝘛𝘌𝘚 _BY_ :
+│ KING OF BEAR
 │============================`
     let header = conn.menu.header || '◪「 %category 」'
     let body   = conn.menu.body   || '├❏  %cmd%islimit'
@@ -118,7 +124,7 @@ let handler  = async (m, { conn, usedPrefix: _p, DevMode }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
     //conn.reply(m.chat, text.trim(), m)
-    await conn.send2Button(m.chat, text.trim(), 'PEMILIK BOT BY ❤️ BENNIISMAEL', 'OWNER', '#owner', 'DONASI', '#donasi', m)
+    await conn.send2Button(m.chat, text.trim(), 'PEMILIK BOT BY ❤️ KING OF BEAR', 'OWNER', '#owner', 'DONASI', '#donasi', m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
@@ -167,4 +173,3 @@ function ucapan() {
   }
   return res
 }
-

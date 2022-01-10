@@ -17,10 +17,10 @@ Ketik ${usedPrefix}tete untuk bantuan
 Bonus: ${poin} XP
 `.trim()
     conn.tekateki[id] = [
-        await conn.sendButton(m.chat, caption, 'BOTSTYLE', 'Bantuan', `.tete`, m),
+        await conn.sendButton(m.chat, caption, 'YUKI BOT', 'Bantuan', `.tete`, m),
         json, poin,
         setTimeout(async () => {
-            if (conn.tekateki[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, 'BOTSTYLE', 'Teka Teki', `.tekateki`, conn.tekateki[id][0])
+            if (conn.tekateki[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, 'YUKI BOT', 'Teka Teki', `.tekateki`, conn.tekateki[id][0])
             delete conn.tekateki[id]
         }, timeout)
     ]

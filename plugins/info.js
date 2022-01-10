@@ -10,45 +10,44 @@ let handler  = async (m, { conn, usedPrefix }) => {
   await m.reply('wait Kakak!!')
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
-╠═〘 ${package.name} 〙 ═
-╠➥ *Versi:* ${package.version}
-╠➥ *Issue:* ${package.bugs.url}
-╠➥ *Prefix:* ' ${usedPrefix} '
-╠➥ *Menu:* ${usedPrefix}menu
-╠➥ *Ping:* ${neww - old} *ms*
-╠➥ *Total user:* ${totalreg} *user*
-╠➥ *Uptime:* ${uptime}
+╠═〘 𝙆𝙄𝙉𝙂 𝙊𝙁 𝘽𝙀𝘼𝙍 〙 ═
+╠➥ *Prefix         :* ' ${usedPrefix} '
+╠➥ *Menu         :* ${usedPrefix}Menu
+╠➥ *Ping           :* ${neww - old} *Ms*
+╠➥ *Total User :* ${totalreg} *User*
+╠➥ *Runtime    :* ${uptime}
 ║
-╠═〘 DONASI 〙 ═
-╠➥ Indosat [082114499086]
-╠➥ Gopay [082114499086]
-╠➥ Saweria [https://saweria.co/botstyle]
+╠═〘 *DONASI* 〙 ═
+╠➥ Indosat [0882-7926-8363]
+╠➥ Gopay [VIA QR]
+╠➥ Saweria [https://saweria.co/raraharsita2]
 ║
-╠═ Request? ${package.bugs.url}
-╠═ officiall Group *${conn.getName(conn.user.jid)}* :
-${(global.linkGC).map((v, i) => '║ *Group ' + (i + 1) + '*\n║' + v).join`\n║\n`}
+╠═ *Request?* https://bit.ly/ChannelKingOfBear
+╠═ *Officiall Group* *${conn.getName(conn.user.jid)}* :
+║   ${(global.linkGC).map((v, i) => ' *Group ' + (i + 1) + '*\n║' + v).join`\n║\n`}
 ║
 ║${readMore}
-╠═〘 PIRACY BOT_STYLE 〙 ═
-╠➥ *KAMI TIDAK BERTANGGUNG*
-║   *JAWAB ATAS PENYALAH*
-║   *GUNAAN BOT*
-╠➥ *KAMI TIDAK BERTANGGUNG*
-║   *JAWAB ATAS KEBOCORAN DATA*
-║   *PRIBADI ANDA*
-╠➥ *KAMI AKAN MENYIMPAN DATA*
-║   *SEPERTI NOMER TELEPON*
-║   *ANDA DI DATABASE KAMI*
+╠═〘 *PIRACY YUKI_BOT* 〙 ═
+╠➥ KAMI TIDAK BERTANGGUNG
+║   JAWAB ATAS PENYALAH
+║   GUNAAN BOT
+╠➥ KAMI TIDAK BERTANGGUNG
+║   JAWAB ATAS KEBOCORAN DATA
+║   PRIBADI ANDA
+╠➥ KAMI AKAN MENYIMPAN DATA
+║   SEPERTI NOMER TELEPON
+║   ANDA DI DATABASE KAMI
 ║ 
 ║ 
-╠═ ©2021 ${package.name}
+╠═ *©2022 KING OF BEAR* ═
 ╠═ Scrip original by Norutomo
 ╠═ Creator : Benniismael
-╠═ Api xsteam :St4r
+╠═ Api xsteam : St4r
 ╠═ Api Bsbt : Benniismael
 ╠═ Resta
 ╠═ Ariq
-╠═〘 BOT_STYLE 〙 ═
+╠═ King Of Bear
+╠═〘 *YUKI_BOT* 〙 ═
 `.trim(), m)
 }
 handler.help = ['info']

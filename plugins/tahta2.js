@@ -34,7 +34,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
       console.log(e)
       throw '_*Error!*_'
     }
-  } else throw `contoh:\n${usedPrefix + command} ariffb`
+  } else throw `contoh:\n${usedPrefix + command} Bear`
 }
 handler.help = ['tahta2'].map(v => v + ' <teks>')
 handler.tags = ['creator']

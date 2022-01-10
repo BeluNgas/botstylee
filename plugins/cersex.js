@@ -15,7 +15,7 @@ handler.tags = ['quotes']
 handler.command = /^(carsex|cerita_sex)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.private = false
 

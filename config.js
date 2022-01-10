@@ -1,9 +1,9 @@
 global.DeveloperMode = 'false' //true Or false
-global.linkGC = ['https://chat.whatsapp.com/KihEAYjKr04LI4uUrbiiip']
+global.linkGC = ['https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL']
 global.Owner = {
   // use the phone number with the country code, for example Indonesia '62' America '1' etc
-  '62895368900456': { // put your number here
-    name: 'benniismael',
+  '6288279268363': { // put your number here
+    name: 'King Of Bear',
     isDev: true, // if true this number will send if bot have bug and developer mode true
     isReport: true, // if true this number will send if user use command /report or /join
     isCreator: true // if true this number will send if user use command /owner or /creator
@@ -59,8 +59,8 @@ fs.watchFile(file, () => {
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = 'Benniganteng \'ig : Beni_230'
-  var sticker_author = 'Benniismael'
+  var sticker_name = 'KingOfBear \'ig : drak_ipul123'
+  var sticker_author = 'KingOfBear'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
