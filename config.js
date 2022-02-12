@@ -59,8 +59,8 @@ fs.watchFile(file, () => {
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = 'KingOfBear \'ig : drak_ipul123'
-  var sticker_author = 'KingOfBear'
+  var sticker_name = 'BeluTod/ReviTod'
+  var sticker_author = 'RobbyTod/MosabTod'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
